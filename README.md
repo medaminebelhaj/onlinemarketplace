@@ -1,156 +1,128 @@
-📌 About the Project
+# Online Marketplace
 
-The Online Marketplace is a full-stack eCommerce platform that enables users to browse, purchase, and manage products. The application is built using Spring Boot for the backend and React for the frontend, with MySQL as the database and Redis for caching the shopping cart data.
+## 📌 About the Project
 
-🚀 Features
+The **Online Marketplace** is a full-stack eCommerce platform that enables users to browse, purchase, and manage products. The application is built using **Spring Boot** for the backend and **React** for the frontend, with **MySQL** as the database and **Redis** for caching the shopping cart data.
 
-🛍️ User Authentication (Login & Registration)
+---
 
-📦 Product Management (Add, Edit, Delete, View Products)
+## 🚀 Features
 
-🛒 Shopping Cart (Stored using Redis for performance optimization)
+- 🛍️ **User Authentication** (Login & Registration)  
+- 📦 **Product Management** (Add, Edit, Delete, View Products)  
+- 🛒 **Shopping Cart** (Stored using Redis for performance optimization)  
+- 💳 **Order Management** (Checkout, Order History)  
+- 🔒 **Admin Dashboard** (Manage Users, Orders, and Inventory)  
+- 📊 **REST API with Spring Boot**  
 
-💳 Order Management (Checkout, Order History)
+---
 
-🔒 Admin Dashboard (Manage Users, Orders, and Inventory)
+## 🛠️ Tech Stack
 
-📊 REST API with Spring Boot
+### **Backend (Spring Boot)**
 
-🛠️ Tech Stack
+- Spring Boot (Java)  
+- Spring Security (JWT Authentication)  
+- Spring Data JPA (MySQL Database)  
+- Redis (Shopping Cart Caching)  
+- RESTful APIs  
 
-Backend (Spring Boot)
+### **Frontend (React)**
 
-Spring Boot (Java)
+- React.js  
+- React Router (Navigation)  
+- Redux (State Management)  
+- Tailwind CSS (Styling)  
 
-Spring Security (JWT Authentication)
+### **Database**
 
-Spring Data JPA (MySQL Database)
-
-Redis (Shopping Cart Caching)
-
-RESTful APIs
-
-Frontend (React)
-
-React.js
-
-React Router (Navigation)
-
-Redux (State Management)
-
-Tailwind CSS (Styling)
-
-Database
-
-MySQL (Relational Database)
-
-Redis (Cache for shopping cart data)
+- MySQL (Relational Database)  
+- Redis (Cache for shopping cart data)  
 
 
 
-🚀 Getting Started
+---
 
-Prerequisites
+## 🚀 Getting Started
+
+### **Prerequisites**  
 
 Make sure you have the following installed:
 
-Java 17+
+- Java 17+  
+- Node.js & npm  
+- MySQL  
+- Redis  
+- Git  
 
-Node.js & npm
+### **Setup Instructions**  
 
-MySQL
+#### **1️⃣ Clone the Repository**
 
-Redis
-
-Git
-
-Setup Instructions
-
-1️⃣ Clone the Repository
-
+```sh
 git clone https://github.com/medaminebelhaj/onlinemarketplace.git
 cd onlinemarketplace
+```
 
-2️⃣ Backend Setup
+#### **2️⃣ Backend Setup**
 
-cd backend
+```sh
+cd src
 mvn clean install
 mvn spring-boot:run
+```
 
-3️⃣ Frontend Setup
+#### **3️⃣ Frontend Setup**
 
-cd ../frontend
+```sh
+cd ../client
 npm install
 npm start
+```
 
-📚 API Endpoints (Example)
+---
 
-Authentication
+## 📚 API Endpoints (Example)
 
-Method
+### **Authentication**
 
-Endpoint
+| Method | Endpoint           | Description          |
+|--------|-------------------|----------------------|
+| POST   | `/api/auth/register` | Register a new user |
+| POST   | `/api/auth/login` | User login          |
 
-Description
+### **Products**
 
-POST
+| Method | Endpoint         | Description                   |
+|--------|-----------------|-------------------------------|
+| GET    | `/api/products` | Get all products             |
+| POST   | `/api/products` | Add a new product (Admin only) |
 
-/api/auth/register
+---
 
-Register a new user
+## 🛡️ Security & Authentication
 
-POST
+- **JWT Authentication** for secure access.  
+- **Role-based access** (User/Admin privileges).  
 
-/api/auth/login
+---
 
-User login
+## 📜 License
 
-Products
+This project is licensed under the **MIT License**.
 
-Method
+---
 
-Endpoint
-
-Description
-
-GET
-
-/api/products
-
-Get all products
-
-POST
-
-/api/products
-
-Add a new product (Admin only)
-
-🛡️ Security & Authentication
-
-JWT Authentication for secure access.
-
-Role-based access (User/Admin privileges).
-
-📜 License
-
-This project is licensed under the MIT License.
-
-💡 Future Enhancements
-
-✅ Payment Integration (Stripe/PayPal)
-
-✅ Wishlist & Reviews Feature
-
-✅ AI-based Product Recommendations
-
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to open a PR or an issue.
 
-📞 Contact
+---
 
-Author: Mohamed Amine Belhaj
+## 📞 Contact
 
-GitHub: medaminebelhaj
+- **Author:** Mohamed Amine Belhaj  
+- **GitHub:** [medaminebelhaj](https://github.com/medaminebelhaj)  
+- **Email:** aminebelhaj2003@example.com  
 
-Email: contact@example.com
+🚀 **Happy Coding!**
